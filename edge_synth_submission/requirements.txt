@@ -1,0 +1,12 @@
+ctgan
+joblib
+matplotlib
+numpy
+onnx
+onnxruntime
+pandas
+scikit-learn
+seaborn
+skl2onnx
+torch
+xgboost
