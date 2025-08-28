@@ -24,7 +24,8 @@ edge_synth_submission/
 ├── analysis/                  # Evaluation and visualization
 │   ├── logistic_regression_classifier.py
 │   ├── xg_boost_classifier.py
-│   ├── visualize_data.py
+│   ├── heatmap.py
+|   |-- data_distribution_comparison.py
 │   ├── ks_test.py
 │   ├── compare_model_size.py
 ├── optimization/             # ONNX conversion & inference
