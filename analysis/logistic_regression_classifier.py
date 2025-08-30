@@ -19,19 +19,6 @@ print(synthetic_df["income"].value_counts())
 features = ['age', 'workclass', 'education', 'occupation', 'hours-per-week']  # Adjust if needed
 target = 'income'
 
-# Encode categorical features
-combined = pd.concat([real_df, synthetic_df])
-combined_encoded = pd.get_dummies(combined[features + [target]])
-
-# Convert categorical to category dtype
-categorical_cols = ['workclass', 'education', 'occupation']
-for col in categorical_cols:
-    combined[col] = combined[col].astype("category")
-
-# Split back into real and synthetic
-real_encoded = combined_encoded.iloc[:len(real_df)]
-synthetic_encoded = combined_encoded.iloc[len(real_df):]
-
 X = synthetic_df[features]
 y = synthetic_df[target]
 

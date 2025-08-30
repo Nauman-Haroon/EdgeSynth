@@ -11,7 +11,7 @@ features = ['age', 'workclass', 'education', 'occupation', 'hours-per-week']
 X = pd.get_dummies(df[features])
 y = df['income']
 
-# Encode labels from ['<=50K', '>50K'] → [0, 1]
+# Encode labels from ['<=50K', '>50K'] to [0, 1]
 label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)  # <=50K → 0, >50K → 1
 

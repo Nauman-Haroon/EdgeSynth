@@ -2,7 +2,7 @@ import pandas as pd
 from ctgan import CTGAN
 from sklearn.utils import resample
 import torch
-import pickle  
+
 
 
 def load_and_preprocess_data(filepath):
